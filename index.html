@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm 7 - Trang Giới Thiệu</title>
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3f37c9;
+            --accent-color: #f72585;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+            --light-text: #f8f9fa;
+            --section-bg: #ffffff;
+            --section-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--light-text);
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header-content p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .navbar {
+            background-color: var(--secondary-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .navbar a {
+            color: var(--light-text);
+            padding: 16px 25px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        
+        .navbar a:hover {
+            background-color: var(--primary-color);
+        }
+        
+        .content {
+            padding: 40px 0;
+        }
+        
+        .member-section {
+            background-color: var(--section-bg);
+            border-radius: 8px;
+            box-shadow: var(--section-shadow);
+            padding: 30px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .member-section h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+        }
+        
+        .member-section p {
+            font-size: 1.1rem;
+            color: var(--text-color);
+        }
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--light-text);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2rem;
+            }
+            
+            .header-content p {
+                font-size: 1rem;
+            }
+            
+            .navbar a {
+                padding: 12px 15px;
+                font-size: 0.9rem;
+            }
+            
+            .member-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>Nhóm 7</h1>
+            <p>Trang giới thiệu chính thức về các thành viên của nhóm chúng tôi</p>
+        </div>
+    </header>
+    
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#do">Đô</a>
+            <a href="#tri">Trí</a>
+            <a href="#tai">Tài</a>
+            <a href="#chianh">Chí Anh</a>
+        </div>
+    </nav>
+    
+    <div class="container content">
+        <div class="member-section" id="do">
+            <h2>Đô</h2>
+            <p>Giới thiệu về Đô... Đây là phần nội dung chi tiết về thành viên Đô của nhóm 7. Bạn có thể thêm thông tin về kỹ năng, sở thích, vai trò trong nhóm và các thành tích của Đô.</p>
+        </div>
+        
+        <div class="member-section" id="tri">
+            <h2>Trí</h2>
+            <p>Giới thiệu về Trí... Đây là phần nội dung chi tiết về thành viên Trí của nhóm 7. Bạn có thể thêm thông tin về kỹ năng, sở thích, vai trò trong nhóm và các thành tích của Trí.</p>
+        </div>
+        
+        <div class="member-section" id="tai">
+            <h2>Tài</h2>
+            <p>Giới thiệu về Tài... Đây là phần nội dung chi tiết về thành viên Tài của nhóm 7. Bạn có thể thêm thông tin về kỹ năng, sở thích, vai trò trong nhóm và các thành tích của Tài.</p>
+        </div>
+        
+        <div class="member-section" id="chianh">
+            <h2>Chí Anh</h2>
+            <p>Giới thiệu về Chí Anh... Đây là phần nội dung chi tiết về thành viên Chí Anh của nhóm 7. Bạn có thể thêm thông tin về kỹ năng, sở thích, vai trò trong nhóm và các thành tích của Chí Anh.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nhóm 7. Tất cả các quyền được bảo lưu.</p>
+        </div>
+    </footer>
+</body>
+</html>
