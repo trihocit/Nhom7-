@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Anh Đô - Portfolio</title>
+    <style>
+        /* Định dạng chung */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Thanh điều hướng */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #007bff;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 18px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #003f7f;
+            border-radius: 5px;
+        }
+
+        /* Bố cục trang */
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #007bff;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .profile {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            border: 5px solid #007bff;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+            border-color: #003f7f;
+        }
+        
+        .profile-name {
+            margin-top: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #222;
+        }
+
+        /* Danh sách kỹ năng */
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .skills ul li {
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .skills ul li:hover {
+            background: #003f7f;
+            transform: scale(1.05);
+        }
+
+        /* Thông tin liên hệ */
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            display: block;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+            color: #003f7f;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                display: block;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Portfolio - Nguyễn Anh Đô
+    </header>
+
+    <div class="profile">
+        <img class="profile-img" src="img/anhdo.jpg" alt="Ảnh đại diện">
+        <h2 class="profile-name">Nguyễn Anh Đô</h2>
+    </div>
+
+    <nav>
+        <a href="#about">Giới Thiệu</a>
+        <a href="#education">Học Vấn</a>
+        <a href="#experience">Kinh Nghiệm</a>
+        <a href="#skills">Kỹ Năng</a>
+        <a href="#projects">Dự Án</a>
+        <a href="#contact">Liên Hệ</a>
+    </nav>
+
+    <div class="container">       
+        <!-- Giới thiệu -->
+        <section id="about">
+            <h2>Giới Thiệu</h2>
+            <p>Xin chào! Tôi là <strong>Nguyễn Anh Đô</strong>, một Developer chuyên về lập trình và phát triển phần mềm. Sau 4 năm học tại HUTECH, tôi đã tích lũy được nhiều kiến thức về lập trình, kiểm thử và phát triển phần mềm.</p>
+        </section>
+
+        <!-- Học vấn -->
+        <section id="education">
+            <h2>Học Vấn</h2>
+            <p><strong>Trường:</strong> Đại học Công nghệ TP.HCM (HUTECH)</p>
+            <p><strong>Chuyên ngành:</strong> Công nghệ phần mềm</p>
+            <p><strong>Năm tốt nghiệp:</strong> 2025</p>
+        </section>
+
+        <!-- Kinh nghiệm -->
+        <section id="experience">
+            <h2>Kinh Nghiệm</h2>
+            <p><strong>2024 - Hiện tại:</strong> Tester tại Công ty ABC</p>
+            <p><strong>2023 - 2024:</strong> Thực tập Tester tại Công ty XYZ</p>
+        </section>
+
+        <!-- Kỹ năng -->
+        <section id="skills" class="skills">
+            <h2>Kỹ Năng</h2>
+            <ul>
+                <li>Kiểm thử phần mềm (Manual & Automation)</li>
+                <li>Test case, Test plan, Bug tracking</li>
+                <li>Selenium, JUnit, Postman</li>
+                <li>Java, Python, SQL</li>
+                <li>Git, GitHub</li>
+            </ul>
+        </section>
+
+        <!-- Dự án -->
+        <section id="projects">
+            <h2>Dự Án Đã Thực Hiện</h2>
+            <p><strong>Website Quản Lý Sinh Viên:</strong> PHP, MySQL</p>
+            <p><strong>Ứng dụng kiểm thử API:</strong> Postman, Selenium</p>
+        </section>
+
+        <!-- Liên hệ -->
+        <section id="contact" class="contact-info">
+            <h2>Liên Hệ</h2>
+            <a href="mailto:nguyenanhdo@example.com">📧 Email: nguyenanhdo@example.com</a>
+            <a href="tel:0987654321">📞 Điện thoại: 0987 654 321</a>
+            <a href="https://github.com/nguyenanhdo" target="_blank">💻 GitHub: github.com/nguyenanhdo</a>
+            <a href="https://linkedin.com/in/nguyenanhdo" target="_blank">🔗 LinkedIn: linkedin.com/in/nguyenanhdo</a>
+        </section>
+    </div>
+
+</body>
+</html>
